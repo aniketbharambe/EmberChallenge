@@ -1,0 +1,51 @@
+<!-- Team Starts Here -->
+	<section id="about">
+		<div id="our-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-xs-12 col-sm-12">
+						<h2>Our Team</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					{{#each ourTeam as |ourTeam|}}
+						<div class="col-md-3 col-xs-12 col-sm-6">
+							<div class="team-box">
+								<div class="imgbox img-circle">
+									<img src="{{ourTeam.path}}" class="img-responsive" alt="" title="" />
+								</div>
+								<h3>{{ourTeam.name}}</h3>
+								<h4>{{ourTeam.designation}}</h4>
+								<p>{{ourTeam.about}}</p>
+								<ul>
+									<li><a href="javascript:void(0);"><img src="{{ourTeam.facebook}}" alt="" title="" /></a></li>
+									<li><a href="javascript:void(0);"><img src="{{ourTeam.twitter}}" alt="" title="" /></a></li>
+									<li><a href="javascript:void(0);"><img src="{{ourTeam.linked_in}}" alt="" title="" /></a></li>
+								</ul>
+							</div>
+						</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Team Ends Here -->
+	
+<!-- Brand Section Starts Here -->
+	<div id="brand-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12">
+					<ul class="list-inline">
+					{{#each brands as |brands|}}
+						<li><img src="{{brands.brands_logo}}" class="img-responsive" alt="" title="" /></li>
+					{{/each}}	
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Brand Section Ends Here -->

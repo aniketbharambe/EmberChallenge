@@ -1,0 +1,93 @@
+<!-- Contact Starts Here -->
+	<section id="contact">
+		<div id="contact-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
+						<h2>Contact</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-xs-12 col-sm-12">
+						<div class="col-md-6 col-xs-12 col-sm-6">
+							{{#if isSubmitted}}
+								<div class="panel panel-success">
+									<div class="panel-heading">
+										<h3 class="panel-title">
+											Thank you for contacting us.
+										</h3>
+									</div>
+								</div> 
+							{{else}}
+								<div class="contact-input">
+									<form name="sentMessage">
+										<div class="form-group">
+											{{input type="text" class="form-control" placeholder="Name" id="name" value=name}}
+											{{#if showErrors}}
+												<span class="contact-error-msg-text">{{errors.name}}</span>
+											{{/if}}
+										</div>
+										<div class="form-group">
+											{{input type="email" class="form-control" placeholder="Email" id="email" value=email }}
+											{{#if showErrors}}
+												<span class="contact-error-msg-text">{{errors.email}}</span>
+											{{/if}}
+										</div>
+										<div class="form-group">
+											{{input type="tel" class="form-control" placeholder="Phone" id="phone" value=phone}}
+											{{#if showErrors}}
+												<span class="contact-error-msg-text">{{errors.phone}}</span>
+											{{/if}}   
+										</div>
+										<div class="form-group">
+											{{textarea class="form-control" placeholder="Message" id="message" value=description }}
+											{{#if showErrors}}
+												<span class="contact-error-msg-text">{{errors.description}}</span>
+											{{/if}}
+										</div>
+										<div class="form-group submit-contact-button">
+											<button  {{action "submitContact"}} type="submit" class="btn-contact">Submit</button>
+										</div>
+									</form>
+								</div>
+							{{/if}}
+						</div>
+						<div class="col-md-3 col-xs-12 col-sm-3">
+							<div class="contact-text">
+								<h5>Address</h5>
+								<p>307 5th Ave, 16th Floor<br>New York, NY 10016</p>
+							</div>
+							<div class="contact-text">
+								<h5>Phone</h5>
+								<p>212-222-1234</p>
+							</div>
+							<div class="contact-text">
+								<h5>Fax</h5>
+								<p>212-630-7862</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12 col-sm-3">
+							<div class="contact-text">
+								<h5>Email</h5>
+								<p>info@somecompany.com</p>
+							</div>
+							<div class="contact-text">
+								<h5>Connect</h5>
+								<p>
+									<a href="javascript:void(0);"><img src="../assets/img/ftr_fb.png" alt="" title="" /></a>
+									<a href="javascript:void(0);"><img src="../assets/img/ftr_tw.png" alt="" title="" /></a>
+									<a href="javascript:void(0);"><img src="../assets/img/ftr_ln.png" alt="" title="" /></a>
+									<a href="javascript:void(0);"><img src="../assets/img/ftr_pi.png" alt="" title="" /></a>
+									<a href="javascript:void(0);"><img src="../assets/img/ftr_v.png" alt="" title="" /></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Contact Ends Here -->

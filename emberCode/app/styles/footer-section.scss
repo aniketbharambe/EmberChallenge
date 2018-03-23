@@ -1,0 +1,30 @@
+/* Footer CSS */
+
+#footer-sec {
+	background: #1f1f1f; 
+	padding: 60px 0 24px;
+
+	.footer-text {
+		h5 {
+			color: #fff; 
+			font-family: "Arial"; 
+			font-size: 18px;
+		}
+
+		p {
+			color: #7b7b7b; 
+			font-family: "Arial"; 
+			font-size: 18px; 
+			text-align: left; 
+			margin: 0;
+
+			@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+				font-size: 12px;
+			}
+		}
+	}
+
+	hr {
+		border-color: #7b7b7b;
+	}
+}

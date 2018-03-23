@@ -1,0 +1,23 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/emberCode/dist
+/emberCode/tmp
+
+# dependencies
+/emberCode/node_modules
+/emberCode/bower_components
+
+# misc
+/emberCode/.sass-cache
+/emberCode/connect.lock
+/emberCode/coverage/*
+/emberCode/libpeerconnection.log
+/emberCode/npm-debug.log*
+/emberCode/yarn-error.log
+/emberCode/testem.log
+
+# ember-try
+/emberCode/.node_modules.ember-try/
+/emberCode/bower.json.ember-try
+/emberCode/package.json.ember-try

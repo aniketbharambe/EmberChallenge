@@ -1,0 +1,46 @@
+<!-- Redefining Section Starts Here -->
+	<div id="redefine-web">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xs-12 col-sm-6 hidden-xs">
+					<div class="left-panel">
+						<img src="../assets/img/layers.png" class="img-responsive" alt="" title="" />
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6 hidden-xs">
+					<div class="right-panel">
+						<h2>Redifining the web</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis convallis metus in pulvinar. Suspendisse congue at leo in semper. Aenean vel ligula nec massa lobortis placerat vitae ut mauris. Morbi gravida metus id urna molestie sagittis. 
+						</p>
+						<p>
+							Nullam ornare convallis enim vel posuere. Vivamus purus orci, condimentum quis arcu vel, elementum dapibus libero. Nulla congue, ligula sit amet efficitur tincidunt, ex elit varius neque, a ultrices dui augue in justo.
+						</p>
+						<input type="button" class="btn-learn" value="Learn more" {{action "toggleModal"}}/>
+					</div>
+				</div>
+				<div class="col-md-12 col-xs-12 col-sm-12 visible-xs">
+					<div class="center-panel">
+						<h2>Redifining the web</h2>
+						<img src="../assets/img/layers.png" class="img-responsive" alt="" title="" />
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<input type="button" class="btn-learn" value="Learn more" {{action "toggleModal"}}/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Redefining Section Ends Here -->
+
+<!-- Learn More Modal Starts Here -->
+	{{#if isShowingLearnMoreModal}}
+		{{#ember-wormhole renderInPlace="true"}}
+			{{learn-more-modal toggleModal='toggleModal'}}
+		{{/ember-wormhole}}
+	{{/if}}
+<!-- Learn More Modal Ends Here -->
