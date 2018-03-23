@@ -1,0 +1,6 @@
+{
+  "name": "ember-code",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
