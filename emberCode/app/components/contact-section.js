@@ -2,7 +2,7 @@ import Ember from 'ember';
 import EmberValidations from 'ember-validations';
 
 export default Ember.Component.extend(EmberValidations, {
-	showErrors : false,
+    showErrors : false,
     validations: {
         name:{
             presence: { message: 'Please enter your name.' }

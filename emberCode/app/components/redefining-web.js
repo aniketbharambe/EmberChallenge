@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	isShowingLearnMoreModal: false,
-	actions: {
+    isShowingLearnMoreModal: false,
+    actions: {
         toggleModal() {
-			this.toggleProperty('isShowingLearnMoreModal');
-		}
+            this.toggleProperty('isShowingLearnMoreModal');
+        }
     }
 });

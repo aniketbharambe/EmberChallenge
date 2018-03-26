@@ -1,7 +1,7 @@
 /* Hero Header CSS */
 
 #hero-header {
-	background: url(../assets/img/office.jpeg) no-repeat center top; 
+	background: url(../assets/img/office.jpeg) no-repeat center top;
 	background-size: cover; 
 	width: 100%;
 
@@ -11,41 +11,41 @@
 		padding: 50px 0 218px;
 
 		h1 {
-			margin: 120px 0 15px; 
-			font-family: "Arial"; 
-			font-size: 50px; 
-			color: #fff; 
+			margin: 120px 0 15px;
+			font-family: "Arial";
+			font-size: 50px;
+			color: #fff;
 			text-align: center;
 		}
 
 		p {
-			font-family: "Arial"; 
-			font-size: 18px; 
-			margin-bottom: 30px; 
-			text-align: center; 
+			font-family: "Arial";
+			font-size: 18px;
+			margin-bottom: 30px;
+			text-align: center;
 			color: #fff;
 		}
 	}
 
 	.btn-primary {
-		background: #5c1bb7; 
-		border: 1px solid #5c1bb7; 
-		border-bottom: 4px solid #5118a2; 
-		color: #fff; 
-		box-shadow: none; 
-		text-shadow: none; 
-		font-size: 20px; 
+		background: #5c1bb7;
+		border: 1px solid #5c1bb7;
+		border-bottom: 4px solid #5118a2;
+		color: #fff;
+		box-shadow: none;
+		text-shadow: none;
+		font-size: 20px;
 		padding: 10px 40px;
 
 		&:hover {
-			background: #5118a2; 
-			border: 1px solid #5118a2; 
+			background: #5118a2;
+			border: 1px solid #5118a2;
 			border-bottom: 4px solid #5118a2;
 		}
 
 		&:focus {
-			background: #5118a2; 
-			border: 1px solid #5118a2; 
+			background: #5118a2;
+			border: 1px solid #5118a2;
 			border-bottom: 4px solid #5118a2;
 			outline: 0 !important;
 		}
